@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">OTG Link</string>
+
+    <!-- Foreground service notification -->
+    <string name="notification_channel">OTG keeper</string>
+    <string name="notification_title">OTG always on</string>
+    <string name="notification_text">USB-C earphones will work when plugged in</string>
+
+    <!-- Status card -->
+    <string name="status_on_title">OTG is always on</string>
+    <string name="status_on_body">Plug in your USB-C earphones any time. They\'ll work instantly.</string>
+    <string name="status_temporary_title">OTG is on for now</string>
+    <string name="status_off_title">OTG is off</string>
+    <string name="status_incomplete_body">Finish the steps below so it stays on by itself.</string>
+    <string name="unsupported_title">Not supported yet</string>
+    <string name="unsupported_body">%1$s %2$s doesn\'t have the OTG switch this app controls. Supported today: Oppo, Realme and OnePlus.</string>
+
+    <string name="setup_section">Setup</string>
+    <string name="setup_progress" tools:ignore="PluralsCandidate">%1$d of %2$d done</string>
+    <string name="footer_supported">Works on Oppo, Realme and OnePlus phones</string>
+
+    <!-- Step 1: permission -->
+    <string name="step_permission_title">One-time permission</string>
+    <string name="step_permission_done">Granted</string>
+    <string name="step_permission_todo">Lets the app switch OTG on for you</string>
+    <string name="step_permission_guide_debugging">On the phone: Developer options → turn on USB debugging</string>
+    <string name="step_permission_guide_debugging_oplus">On the phone: Developer options → turn on USB debugging and Disable permission monitoring</string>
+    <string name="step_permission_guide_connect">Connect the phone to a computer</string>
+    <string name="step_permission_guide_run">Run the command below</string>
+    <string name="action_copy_command">Copy command</string>
+    <string name="toast_copied">Copied</string>
+
+    <!-- Step 2: keeper -->
+    <string name="step_keeper_title">Keep OTG always on</string>
+    <string name="step_keeper_blocked">Complete step 1 first</string>
+    <string name="step_keeper_running">Running. Switches OTG back on whenever the phone turns it off</string>
+    <string name="step_keeper_off">Turn on to start</string>
+
+    <!-- Step 3: notification -->
+    <string name="step_notification_title">Notification</string>
+    <string name="step_notification_done">Allowed</string>
+    <string name="step_notification_todo">Android closes background apps that have no notification</string>
+    <string name="action_allow_notification">Allow notification</string>
+
+    <!-- Step 4: battery optimisation -->
+    <string name="step_battery_title">Battery optimisation</string>
+    <string name="step_battery_done">Turned off for this app</string>
+    <string name="step_battery_todo">Stops Android from pausing the app</string>
+    <string name="action_turn_off">Turn off</string>
+
+    <!-- Step 5: vendor background activity. %1$s = brand, e.g. "Realme" -->
+    <string name="step_background_title">Background activity</string>
+    <string name="step_background_done">On. %1$s won\'t close the app in the background</string>
+    <string name="step_background_todo">%1$s phones close apps in the background unless you allow it</string>
+    <string name="step_background_restricted">Background use is restricted for this app. %1$s phones close apps in the background unless you allow it</string>
+    <string name="step_background_killed">%1$s stopped the app in the background. Allow background activity so it keeps running</string>
+    <string name="step_background_open">Tap Open settings</string>
+    <string name="action_open_settings">Open settings</string>
+    <string name="action_confirm_background">I\'ve turned it on</string>
+
+    <string-array name="background_steps_oplus">
+        <item>Tap Battery usage</item>
+        <item>Select Allow background activity</item>
+        <item>If you see Allow auto launch, turn it on too</item>
+    </string-array>
+    <string-array name="background_steps_vivo">
+        <item>Tap Battery</item>
+        <item>Choose Allow background activity (or High background power usage)</item>
+        <item>In i Manager → App manager → Autostart, turn this app on</item>
+    </string-array>
+    <string-array name="background_steps_xiaomi">
+        <item>Turn on Autostart</item>
+        <item>Go back, tap Battery saver</item>
+        <item>Select No restrictions</item>
+    </string-array>
+    <string-array name="background_steps_samsung">
+        <item>Tap Battery</item>
+        <item>Select Unrestricted</item>
+    </string-array>
+    <string-array name="background_steps_default">
+        <item>Tap Battery</item>
+        <item>Allow background use (Unrestricted)</item>
+    </string-array>
+
+    <!-- Step 6: reboot -->
+    <string name="step_restart_title">Works after restart</string>
+    <string name="step_restart_done">Passed. The app started by itself after the last restart</string>
+    <string name="step_restart_failed">The app didn\'t start after the last restart. Check step 5, then restart again</string>
+    <string name="step_restart_todo">Restart your phone once, then open this app to confirm</string>
+</resources>

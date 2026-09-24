@@ -1,0 +1,12 @@
+<resources>
+    <color name="bg">#0F1115</color>
+    <color name="card">#1A1D23</color>
+    <color name="text">#ECEEF2</color>
+    <color name="text2">#9AA1AD</color>
+    <color name="divider">#2A2E36</color>
+    <color name="accent">#7C9BFF</color>
+    <color name="ok">#4CC38A</color>
+    <color name="ok_bg">#15301F</color>
+    <color name="warn">#F2B544</color>
+    <color name="warn_bg">#33280F</color>
+</resources>
